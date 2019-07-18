@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <h1> Bienvenidos a la lista de tareas </h1>
+        <h2> Aca van a ir las tareas </h2>
+        <p> Pepito es un dinosaurio <br>
+        que vive en nuestra mente. <br>
+        Cuando se hace grande <br>
+        es realmente sorpredente. <br>
+        :) <br><br>
+        Hola soy {{ nombre }}, tengo {{ edad }} y mis hobbies son
+        {% for x in hobbies %}
+            <li>{{ x }}</li>
+        {% endfor %} <br>
+        Mis tareas son:
+        {% for Tarea in Tareas %}
+            <li>{{ Tarea.titulo }}:{{ Tarea.descripcion }} </li> <!-- Li agrega vinheta-->
+        {% endfor %}
+        </p>
+    </body>
+</html>
